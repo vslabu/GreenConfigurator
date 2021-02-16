@@ -1,0 +1,25 @@
+c 1 root
+c 2 filterOff
+c 3 HeaderCompressionOff
+c 4 mtOff
+c 5 CompressionMethod
+c 6 LZMA
+c 7 LZMA2
+c 8 PPMd
+c 9 BZip2
+c 10 Deflate
+c 11 tmOff
+p cnf 11 13
+1 0
+5 0
+6 7 8 9 10 0
+-7 -8 0
+-7 -9 0
+-7 -10 0
+-7 -6 0
+-8 -9 0
+-8 -10 0
+-8 -6 0
+-9 -10 0
+-9 -6 0
+-10 -6 0

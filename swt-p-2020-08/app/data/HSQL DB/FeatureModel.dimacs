@@ -1,0 +1,36 @@
+c 1 root
+c 2 compressed_script
+c 3 encryption
+c 4 crypt_aes
+c 5 crypt_blowfish
+c 6 transaction_control
+c 7 txc_mvlocks
+c 8 txc_mvcc
+c 9 txc_locks
+c 10 table_type
+c 11 memory_tables
+c 12 cached_tables
+c 13 small_cache
+c 14 large_cache
+c 15 logging
+c 16 detailed_logging
+c 17 no_write_delay
+c 18 small_log
+p cnf 18 17
+1 0
+6 0
+10 0
+3 -4 0
+3 -5 0
+12 -13 0
+12 -14 0
+-13 -14 0
+15 -16 0
+5 4 -3 0
+-5 -4 0
+9 8 7 0
+-9 -8 0
+-9 -7 0
+-8 -7 0
+12 11 0
+-12 -11 0

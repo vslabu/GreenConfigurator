@@ -1,0 +1,173 @@
+{
+  "model_name": "7Zip",
+  "features": [
+    {
+      "id": 0,
+      "name": "root",
+      "display_name": "Root",
+      "type": "bool",
+      "always_activated": true,
+      "children": [
+        {
+          "id": 1,
+          "name": "compressed_script",
+          "display_name": "Compressed Script",
+          "type": "bool",
+          "always_activated": false,
+          "children": [],
+          "children_type": "NONE"
+        },
+        {
+          "id": 2,
+          "name": "encryption",
+          "display_name": "Encryption",
+          "type": "bool",
+          "always_activated": false,
+          "children": [
+            {
+              "id": 3,
+              "name": "crypt_aes",
+              "display_name": "Crypt Aes",
+              "type": "bool",
+              "always_activated": false,
+              "children": [],
+              "children_type": "NONE"
+            },
+            {
+              "id": 4,
+              "name": "crypt_blowfish",
+              "display_name": "Crypt Blowfish",
+              "type": "bool",
+              "always_activated": false,
+              "children": [],
+              "children_type": "NONE"
+            }
+          ],
+          "children_type": "CHOOSE_ONE"
+        },
+        {
+          "id": 5,
+          "name": "transaction_control",
+          "display_name": "Transaction Control",
+          "type": "bool",
+          "always_activated": true,
+          "children": [
+            {
+              "id": 6,
+              "name": "txc_mvlocks",
+              "display_name": "Txc Mvlocks",
+              "type": "bool",
+              "always_activated": false,
+              "children": [],
+              "children_type": "NONE"
+            },
+            {
+              "id": 7,
+              "name": "txc_mvcc",
+              "display_name": "Txc Mvcc",
+              "type": "bool",
+              "always_activated": false,
+              "children": [],
+              "children_type": "NONE"
+            },
+            {
+              "id": 8,
+              "name": "txc_locks",
+              "display_name": "Txc Locks",
+              "type": "bool",
+              "always_activated": false,
+              "children": [],
+              "children_type": "NONE"
+            }
+          ],
+          "children_type": "CHOOSE_ONE"
+        },
+        {
+          "id": 9,
+          "name": "table_type",
+          "display_name": "Table Type",
+          "type": "bool",
+          "always_activated": true,
+          "children": [
+            {
+              "id": 10,
+              "name": "memory_tables",
+              "display_name": "Memory Tables",
+              "type": "bool",
+              "always_activated": false,
+              "children": [],
+              "children_type": "NONE"
+            },
+            {
+              "id": 11,
+              "name": "cached_tables",
+              "display_name": "Cached Tables",
+              "type": "bool",
+              "always_activated": false,
+              "children": [
+                {
+                  "id": 12,
+                  "name": "small_cache",
+                  "display_name": "Small Cache",
+                  "type": "bool",
+                  "always_activated": false,
+                  "children": [],
+                  "children_type": "NONE"
+                },
+                {
+                  "id": 13,
+                  "name": "large_cache",
+                  "display_name": "Large Cache",
+                  "type": "bool",
+                  "always_activated": false,
+                  "children": [],
+                  "children_type": "NONE"
+                }
+              ],
+              "children_type": "CHOOSE_MAX_ONE"
+            }
+          ],
+          "children_type": "CHOOSE_ONE"
+        },
+        {
+          "id": 14,
+          "name": "logging",
+          "display_name": "Logging",
+          "type": "bool",
+          "always_activated": false,
+          "children": [
+            {
+              "id": 15,
+              "name": "detailed_logging",
+              "display_name": "Detailed Logging",
+              "type": "bool",
+              "always_activated": false,
+              "children": [],
+              "children_type": "NONE"
+            }
+          ],
+          "children_type": "CHOOSE_MULTIPLE"
+        },
+        {
+          "id": 16,
+          "name": "no_write_delay",
+          "display_name": "No Write Delay",
+          "type": "bool",
+          "always_activated": false,
+          "children": [],
+          "children_type": "NONE"
+        },
+        {
+          "id": 17,
+          "name": "small_log",
+          "display_name": "Small Log",
+          "type": "bool",
+          "always_activated": false,
+          "children": [],
+          "children_type": "NONE"
+        }
+      ],
+      "children_type": "CHOOSE_MULTIPLE"
+    }
+  ]
+}

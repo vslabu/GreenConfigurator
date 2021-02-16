@@ -1,0 +1,177 @@
+{
+  "vm": {
+    "-name": "featuremodel",
+    "binaryOptions": {
+      "configurationOption": [
+        {
+          "name": "root",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "",
+          "optional": "False"
+        },
+        {
+          "name": "compressed_script",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "root",
+          "optional": "True"
+        },
+        {
+          "name": "encryption",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "root",
+          "optional": "True"
+        },
+        {
+          "name": "crypt_aes",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "encryption",
+          "excludedOptions": { "options": "crypt_blowfish" },
+          "optional": "False"
+        },
+        {
+          "name": "crypt_blowfish",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "encryption",
+          "excludedOptions": { "options": "crypt_aes" },
+          "optional": "False"
+        },
+        {
+          "name": "transaction_control",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "root",
+          "optional": "False"
+        },
+        {
+          "name": "txc_mvlocks",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "transaction_control",
+          "excludedOptions": {
+            "options": [
+              "txc_locks",
+              "txc_mvcc"
+            ]
+          },
+          "optional": "False"
+        },
+        {
+          "name": "txc_mvcc",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "transaction_control",
+          "excludedOptions": {
+            "options": [
+              "txc_locks",
+              "txc_mvlocks"
+            ]
+          },
+          "optional": "False"
+        },
+        {
+          "name": "txc_locks",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "transaction_control",
+          "excludedOptions": {
+            "options": [
+              "txc_mvcc",
+              "txc_mvlocks"
+            ]
+          },
+          "optional": "False"
+        },
+        {
+          "name": "table_type",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "root",
+          "optional": "False"
+        },
+        {
+          "name": "memory_tables",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "table_type",
+          "excludedOptions": { "options": "cached_tables" },
+          "optional": "False"
+        },
+        {
+          "name": "cached_tables",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "table_type",
+          "excludedOptions": { "options": "memory_tables" },
+          "optional": "False"
+        },
+        {
+          "name": "small_cache",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "cached_tables",
+          "excludedOptions": { "options": "large_cache" },
+          "optional": "True"
+        },
+        {
+          "name": "large_cache",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "cached_tables",
+          "excludedOptions": { "options": "small_cache" },
+          "optional": "True"
+        },
+        {
+          "name": "logging",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "root",
+          "optional": "True"
+        },
+        {
+          "name": "detailed_logging",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "logging",
+          "optional": "True"
+        },
+        {
+          "name": "no_write_delay",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "root",
+          "optional": "True"
+        },
+        {
+          "name": "small_log",
+          "outputString": "",
+          "prefix": "",
+          "postfix": "",
+          "parent": "root",
+          "optional": "True"
+        }
+      ]
+    }
+  }
+}

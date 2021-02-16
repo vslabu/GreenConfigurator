@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>{{ model }}</title>
+    </head>
+    <body>
+        Gewähltes Modell: {{ model }} <br>
+        Aktuelle Konfig. {{ config1 }} <br>
+        Gespeicherte Konfig.: {{ config2 }} <br>
+        {% if depth %}
+            Suchtiefe: {{ depth }} <br>
+        {% endif %}
+        {% if crit %}
+        Optimierungskriterium: {{ crit }}<br>
+        {% endif %}
+    </body>
+</html>

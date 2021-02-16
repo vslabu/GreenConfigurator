@@ -1,0 +1,370 @@
+{
+  "model": {
+    "config": [
+      {
+        "enabled": false, 
+        "id": 0, 
+        "name": "root"
+      }, 
+      {
+        "enabled": false, 
+        "id": 1, 
+        "name": "filterOff"
+      }, 
+      {
+        "enabled": false, 
+        "id": 2, 
+        "name": "HeaderCompressionOff"
+      }, 
+      {
+        "enabled": false, 
+        "id": 3, 
+        "name": "mtOff"
+      }, 
+      {
+        "enabled": false, 
+        "id": 4, 
+        "name": "CompressionMethod"
+      }, 
+      {
+        "enabled": false, 
+        "id": 5, 
+        "name": "LZMA"
+      }, 
+      {
+        "enabled": false, 
+        "id": 6, 
+        "name": "LZMA2"
+      }, 
+      {
+        "enabled": false, 
+        "id": 7, 
+        "name": "PPMd"
+      }, 
+      {
+        "enabled": false, 
+        "id": 8, 
+        "name": "BZip2"
+      }, 
+      {
+        "enabled": false, 
+        "id": 9, 
+        "name": "Deflate"
+      }, 
+      {
+        "enabled": false, 
+        "id": 10, 
+        "name": "tmOff"
+      }, 
+      {
+        "id": 11, 
+        "name": "Files", 
+        "value": 0
+      }, 
+      {
+        "id": 12, 
+        "name": "BlockSize", 
+        "value": 1
+      }, 
+      {
+        "id": 13, 
+        "name": "x", 
+        "value": 0
+      }
+    ], 
+    "features": [
+      {
+        "always_activated": true, 
+        "children": [
+          {
+            "always_activated": false, 
+            "children": [], 
+            "children_type": null, 
+            "display_name": "Filteroff", 
+            "excluded": [], 
+            "id": 1, 
+            "maxValue": null, 
+            "minValue": null, 
+            "name": "filterOff", 
+            "optional": true, 
+            "outputString": "-mf=off", 
+            "postfix": null, 
+            "prefix": null, 
+            "stepFunction": null, 
+            "type": "bool"
+          }, 
+          {
+            "always_activated": false, 
+            "children": [], 
+            "children_type": null, 
+            "display_name": "Headercompressionoff", 
+            "excluded": [], 
+            "id": 2, 
+            "maxValue": null, 
+            "minValue": null, 
+            "name": "HeaderCompressionOff", 
+            "optional": true, 
+            "outputString": "-mhc=off", 
+            "postfix": null, 
+            "prefix": null, 
+            "stepFunction": null, 
+            "type": "bool"
+          }, 
+          {
+            "always_activated": false, 
+            "children": [], 
+            "children_type": null, 
+            "display_name": "Mtoff", 
+            "excluded": [], 
+            "id": 3, 
+            "maxValue": null, 
+            "minValue": null, 
+            "name": "mtOff", 
+            "optional": true, 
+            "outputString": "-mmt=off", 
+            "postfix": null, 
+            "prefix": null, 
+            "stepFunction": null, 
+            "type": "bool"
+          }, 
+          {
+            "always_activated": true, 
+            "children": [
+              {
+                "always_activated": false, 
+                "children": [], 
+                "children_type": null, 
+                "display_name": "Lzma", 
+                "excluded": [
+                  "LZMA2", 
+                  "PPMd", 
+                  "BZip2", 
+                  "Deflate"
+                ], 
+                "id": 5, 
+                "maxValue": null, 
+                "minValue": null, 
+                "name": "LZMA", 
+                "optional": false, 
+                "outputString": "-m0=LZMA", 
+                "postfix": null, 
+                "prefix": null, 
+                "stepFunction": null, 
+                "type": "bool"
+              }, 
+              {
+                "always_activated": false, 
+                "children": [], 
+                "children_type": null, 
+                "display_name": "Lzma2", 
+                "excluded": [
+                  "LZMA", 
+                  "PPMd", 
+                  "BZip2", 
+                  "Deflate"
+                ], 
+                "id": 6, 
+                "maxValue": null, 
+                "minValue": null, 
+                "name": "LZMA2", 
+                "optional": false, 
+                "outputString": "-m0=LZMA2", 
+                "postfix": null, 
+                "prefix": null, 
+                "stepFunction": null, 
+                "type": "bool"
+              }, 
+              {
+                "always_activated": false, 
+                "children": [], 
+                "children_type": null, 
+                "display_name": "Ppmd", 
+                "excluded": [
+                  "LZMA", 
+                  "LZMA2", 
+                  "BZip2", 
+                  "Deflate"
+                ], 
+                "id": 7, 
+                "maxValue": null, 
+                "minValue": null, 
+                "name": "PPMd", 
+                "optional": false, 
+                "outputString": "-m0=PPMd", 
+                "postfix": null, 
+                "prefix": null, 
+                "stepFunction": null, 
+                "type": "bool"
+              }, 
+              {
+                "always_activated": false, 
+                "children": [], 
+                "children_type": null, 
+                "display_name": "Bzip2", 
+                "excluded": [
+                  "LZMA", 
+                  "LZMA2", 
+                  "PPMd", 
+                  "Deflate"
+                ], 
+                "id": 8, 
+                "maxValue": null, 
+                "minValue": null, 
+                "name": "BZip2", 
+                "optional": false, 
+                "outputString": "-m0=BZip2", 
+                "postfix": null, 
+                "prefix": null, 
+                "stepFunction": null, 
+                "type": "bool"
+              }, 
+              {
+                "always_activated": false, 
+                "children": [], 
+                "children_type": null, 
+                "display_name": "Deflate", 
+                "excluded": [
+                  "LZMA", 
+                  "LZMA2", 
+                  "PPMd", 
+                  "BZip2"
+                ], 
+                "id": 9, 
+                "maxValue": null, 
+                "minValue": null, 
+                "name": "Deflate", 
+                "optional": false, 
+                "outputString": "-m0=Deflate", 
+                "postfix": null, 
+                "prefix": null, 
+                "stepFunction": null, 
+                "type": "bool"
+              }
+            ], 
+            "children_type": "CHOOSE_ONE", 
+            "display_name": "Compressionmethod", 
+            "excluded": [], 
+            "id": 4, 
+            "maxValue": null, 
+            "minValue": null, 
+            "name": "CompressionMethod", 
+            "optional": false, 
+            "outputString": null, 
+            "postfix": null, 
+            "prefix": null, 
+            "stepFunction": null, 
+            "type": "bool"
+          }, 
+          {
+            "always_activated": false, 
+            "children": [], 
+            "children_type": null, 
+            "display_name": "Tmoff", 
+            "excluded": [], 
+            "id": 10, 
+            "maxValue": null, 
+            "minValue": null, 
+            "name": "tmOff", 
+            "optional": true, 
+            "outputString": "-mtm=off", 
+            "postfix": null, 
+            "prefix": null, 
+            "stepFunction": null, 
+            "type": "bool"
+          }, 
+          {
+            "always_activated": false, 
+            "children": [], 
+            "children_type": null, 
+            "display_name": "Files", 
+            "excluded": [], 
+            "id": 11, 
+            "maxValue": 100, 
+            "minValue": 0, 
+            "name": "Files", 
+            "optional": false, 
+            "outputString": null, 
+            "postfix": null, 
+            "prefix": "-ms=", 
+            "stepFunction": "Files + 10", 
+            "type": "numeric"
+          }, 
+          {
+            "always_activated": false, 
+            "children": [], 
+            "children_type": null, 
+            "display_name": "Blocksize", 
+            "excluded": [], 
+            "id": 12, 
+            "maxValue": 4096, 
+            "minValue": 1, 
+            "name": "BlockSize", 
+            "optional": false, 
+            "outputString": null, 
+            "postfix": "m", 
+            "prefix": "-blocksize;", 
+            "stepFunction": "BlockSize * 2", 
+            "type": "numeric"
+          }, 
+          {
+            "always_activated": false, 
+            "children": [], 
+            "children_type": null, 
+            "display_name": "X", 
+            "excluded": [], 
+            "id": 13, 
+            "maxValue": 10, 
+            "minValue": 0, 
+            "name": "x", 
+            "optional": false, 
+            "outputString": null, 
+            "postfix": null, 
+            "prefix": "-mx=", 
+            "stepFunction": "x + 2", 
+            "type": "numeric"
+          }
+        ], 
+        "children_type": "CHOOSE_MULTIPLE", 
+        "display_name": "Root", 
+        "excluded": [], 
+        "id": 0, 
+        "maxValue": null, 
+        "minValue": null, 
+        "name": "root", 
+        "optional": false, 
+        "outputString": null, 
+        "postfix": null, 
+        "prefix": null, 
+        "stepFunction": null, 
+        "type": "bool"
+      }
+    ], 
+    "model_name": "7-ZIP", 
+    "nfp": [
+      {
+        "display_name": "Cpu Load Fixed(%;<)", 
+        "name": "cpu_load_fixed(%;<)"
+      }, 
+      {
+        "display_name": "Cpu Load Bm(%;<)", 
+        "name": "cpu_load_bm(%;<)"
+      }, 
+      {
+        "display_name": "Energy Consumption Fixed(ws;<)", 
+        "name": "energy_consumption_fixed(Ws;<)"
+      }, 
+      {
+        "display_name": "Energy Consumption Bm(ws;<)", 
+        "name": "energy_consumption_bm(Ws;<)"
+      }, 
+      {
+        "display_name": "Compression Size(b;<)", 
+        "name": "compression_size(B;<)"
+      }, 
+      {
+        "display_name": "Run Time(s;<)", 
+        "name": "run_time(s;<)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+Alle Angaben sind mit vorsicht zu genießen, sollten aber stimmen (sagt Vincent)
+
+"always_activated" = true
+    , gdw. alle Eltern sind "optional" = false + es es excludet keine Geschwister
+
+"children_type" = "NONE", "Null" oder was auch immer (such dir was raus)
+    , gdw. Option hat keine Kinder
+
+"children_type" = "CHOOSE_MULTIPLE"
+    , gdw. Option hat Kinder, die sich nicht excluden
+
+"children_type" = "CHOOSE_ONE"
+    , gdw. Option hat Kinder, die sich excluden und diese sind "optional" = false
+
+"children_type" = "CHOOSE_MAX_ONE"
+    , gdw. Option hat Kinder, die sich excluden und diese sind "optional" = true

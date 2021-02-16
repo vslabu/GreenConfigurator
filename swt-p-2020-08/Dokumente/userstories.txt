@@ -1,0 +1,34 @@
+User Stories die übersetzt sind als Issue -> durch X markiert
+
+X1. Der Nutzer möchte Vorschläge für schnelle und effiziente Konfigurationen erhalten, um sein neues System schnell durch die errechneten Vorschläge aufsetzen zu können.
+
+X2. Der Nutzer möchte zu seiner gewählten Konfiguration den Energieverbrauch und die anderen Non-Funktional Points sehen können, um die benötigten Ressourcen zu erfahren.
+
+X3. Der Nutzer möchte unterschiedliche Konfigurationen miteinander vergleichen können und die einzelnen Non Funktional Points sollen ersichtlich sein, um die Auswirkungen der verschiedenen Konfigurationen direkt ablesen zu können.
+
+x4. Der Nutzer möchte die Änderung der Konfigurationsauswahl sofort ersichtlich haben, um die direkten Auswirkungen vergleichen zu können.
+
+X5. Der Nutzer möchte nur valide Konfigurationen auswählen können, um zu keiner Zeit einen invaliden Konfigurationszustand zu besitzen, welcher nachträglich behoben werden muss.
+
+X6. Der Nutzer soll aus der Oberfläche sofort ersehen können, welche Features nutzbar sind und welche nicht, um jederzeit herausfinden zu können, welche Features für seinen Wunschkonfiguration notwendig sind.
+
+X7. Der Nutzer soll die Möglichkeit besitzen für mehrere Function- oder Performance-Influence-Modelle sein bevorzugtes auswählen zu können, um das notwendige Feature Set an seine Bedürfnisse anpassen zu können.
+
+x8. Der Nutzer möchte zwei Konfigurationen gleichzeitig bearbeiten können, um einen direkten Vergleich zur anderen Konfiguration mit ihrem Einfluss erfassen zu können.
+
+x9. Der Nutzer soll die Möglichkeit besitzen, seine ausgewählte Konfiguration vom System prüfen zu lassen auf Effizienz und Performance, um für seine Wunschkonfiguration die bestmöglichen Werten zu erhalten.
+
+x10. Der Nutzer soll die Möglichkeit besitzen, seine Konfigurationen in verschiedenen Visualisierungen einsehen zu können, um die bestmögliche Visualisierung für sich verwenden zu können.
+
+x11. Der Nutzer soll die Möglichkeit besitzen den Grad der automatischen
+Konfigurationsverbesserung einstellen zu können, um die Entscheidung darüber zu besitzen wie viele Features hinzu oder entfernt werden dürfen zu seiner Konfiguration.
+
+x12. Der Nutzer soll die Möglichkeit haben seine aktuelle Konfiguration zu speichern, um diese zu einem späteren Zeitpunkt wieder laden zu können. Das System muss dabei prüfen, ob der Konfigurationsvorschlag schon im System gespeichert ist, um doppelte Konfigurationen zu verhindern.
+
+x13. Der Nutzer soll die Möglichkeit besitzen eine vorhandene Konfiguration laden zu können, um nicht den Aufwand zu haben, jedes Mal eine Konfiguration neu erstellen zu müssen.
+
+x14. Der Nutzer möchte das seine Eingaben beim Aktualisieren der Seite oder Abbruch der Verbindung zur Seite nicht verloren gehen, um Zeit für eventuelle Neueingaben zu sparen.
+
+x15. Der Nutzer möchte die Möglichkeit haben, seine Konfiguration für eine Datei oder Link teilen zu können, um die aktuelle Konfiguration direkt einem anderen Nutzer zur Verfügung zu stellen.
+
+16. Der Entwickler/Support möchte einen einfachen Zugriff auf die Daten des Feature- und Performance-Influence-Modells besitzen, um einfach neue Modelle ohne großen Aufwand in die bisherige Struktur einpflegen zu können.
